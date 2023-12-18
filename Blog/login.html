@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="../Blog/Css/login.css">
+    <script>
+       function Validateform(){
+        var user=document.forms["logpage"]["usr"].value;
+        var pass=document.forms["logpage"]["pas"].value;
+        if(name==""){
+            alert("User Name Must be Filled Out.");
+            return false;
+        }
+        if(pas==""){
+            alert("Password Must be Filled Out.");
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body><div>
+
+    <div class="log">
+        
+        <div class="main">
+            Log In
+        </div>
+        <div class="form">
+            <form action="" name="logpage" method="post">
+                <div class="username">
+                    <input type="text" name="usr" placeholder="Username" required><img class="userpng"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfdJREFUSEu11UuoSFEUBuDvkphgIKG8ihCFgVAyQiEjjzEppZCipDBBjL1CKY+ZIlEiSYkMiJIByiMGSJJMGHidpXNq2519T13dPdtn/Xv9a+317//06OfV08/5dREMwkosw2xMrAt6jUe4jkv4USq0N4LFOIFJHV0+w0bcbsOVCHZhH50dNjl/YjsO5SRtBHuwt4+z2YKj6dmcYAlu9DF5HPtVzWU+HjQ5UoIBeILpLQRfsBOX69hqHMDQFuxdLGwjCLVcLFS/Dmez2Kb8OpL4AtyLfdrBhaqDVQWCkfiUxcbgXQF/GFtzgrcYVzgwCh+z2Gi8L+AfYk5O8A1DCgfW43QWC+0fL+A/Y0RO8LUwtMDFkHfUQw4xxLwOYliBIHINzwmeY8p/SDQ9+rRRYzrkM1jbQhDafoz7lSV8qONx/3MrH5pVPcroKF+nsCHvYDmuZsjoagVeFDqbhmuJCTawRbiVE8Q+Kp1Zo35jMl51XNtUhOE1Kzqd12xyqwjmmwn4POKRfS+QhOrOYU0dj+uMV/z3kbV1EN/CSfcnCd9UkjtS+39YyUDMqHUe5jY2wW7GsbSYkl3vrh2164fU5Aq73oZ4wf+s3hIsxUmM75hBCCEUc6cN11Xh4NqfQmEx/AmI4b9E2EEo6Aqig9bVRdBRfHe43wn+AAntVBlfO442AAAAAElFTkSuQmCC"/>
+                </div>
+                <div class="pass">
+        
+                    <input name="pas"type="password" placeholder="Password" required><img class="passpng"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR9JREFUSEvF1b8uBUEUx/HP9QqiUPqTSKi8AgUPIB5AJ1SioyBuolCoeAYSoia8go5EQqIShXgDwSSzibu5u7O79uZONdkz+/ue85szMx0DHp0B66sKWME6FmJCdzjBVSrBKoAjbBcI7WG/DJICrOI8ChzgNM43sRPnS7gpgqQA95jHFo5zIgHQxTWWmwK+MPLr9xg+ciLjeMMnRpsCvuOPRZWm4skuSgmk4sMBhJ4PmzeT6vFc/Am7uPj7vZ+3D5itKZ4tf8RcCpD52pDRa3u/CoYGOMNGLCtcH2sFJfYkXaeCCbxG0Sk8tw0IJ/c9ik7ipW3AJUILh3GLxbYBQS+ztKwRGu9Ba4CBH7Tg8yGma560yldFTd3y5akX7d+wH5leMxkPQZ+dAAAAAElFTkSuQmCC"/>
+                </div>
+                <div class="acpt">
+                    <input type="checkbox" name="terms" required>I agreed to terms and con.
+                </div>
+                <div class="frgt"><a href="___________" target="_blank" style="text-decoration: none;">Forgot Password?</a></div>
+                <div>
+                    <input  class="logb" type="button" value="Log In" onclick="Validateform()">
+                </div>
+                
+                <div class="register">
+                    Don't have an account? <a href="../Blog/register.html" target="_blank" rel="noopener noreferrer" style="color:black"><b>Register</b></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

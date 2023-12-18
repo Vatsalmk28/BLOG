@@ -1,0 +1,12 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+.sgnup{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.main{
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../Blog/Css/register.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Signing Up</h1>
+    <form class="sgnup"name="RegForm" onsubmit="return validateForm()" method="post">
+        
+        <p>Name: <input type="text"  placeholder="David James " /></p>
+        <p>E-mail: <input type="mail"  name="EMail" placeholder="davidj1@gmail.com"/></p>
+        <p>UserName: <input type="text"  name="UserName" placeholder="DaVid_J"/></p>
+        <p>Password: <input type="password" minlength="8" name="Password" placeholder="Password"/></p>
+        <p>Telephone: <input type="text"  name="Telephone" placeholder="+91-1234567890"/></p> 
+        <p><input type="submit" value="Sign Up" name="Submit" /> <input type="reset" value="Reset" name="Reset" /></p>
+    </form>
+</div>
+    <script>
+        function validateForm() {
+            var name = document.forms["RegForm"]["Name"].value;
+            var email = document.forms["RegForm"]["EMail"].value;
+            var username = document.forms["RegForm"]["UserName"].value;
+            var password = document.forms["RegForm"]["Password"].value;
+            var telephone = document.forms["RegForm"]["Telephone"].value;
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (username == "") {
+                alert("Address must be filled out");
+                return false;
+            }
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            if (telephone == "") {
+                alert("Telephone must be filled out");
+                return false;
+            }
+        
+            return true;
+            window.location.replace="login.html";
+
+        }
+    </script>
+</body>
+</html>
