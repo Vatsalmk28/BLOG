@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <script>
+        let captcha = "";
+
+
+    function generateCaptcha(n) {
+  
+    const chrs = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    
+    for (let i = 0; i < n; i++) {
+    captcha += chrs[(Math.floor(Math.random() * chrs.length))];
+    }
+    document.getElementById("captcha").innerHTML=captcha;
+}
+    function validate(){
+    var user_captcha=document.forms["frgt"]["captcha"].value;
+    if(user_captcha==captcha){
+        window.alert("Right Captcha");
+        window.location.href="login.html";
+    }
+    else
+        window.alert("wrong Captcha");
+    }
+    
+    
+ 
+    
+    </script>
+</head>
+<body>
+    <div id="captcha" ></div>
+    <div class="frgt" >
+        <form name="frgt">
+           Email: <input type="email" name="Email" placeholder="ABC@XYZ.COM">
+           <input type="button" value="Generate Captcha" onclick="generateCaptcha(5)">
+
+           Enter Captcha: <input type="text" name="captcha" maxlength="5">
+            <input type="button" value="Validate" onclick="validate()">
+        </form>
+    </div>
+</body>
+</html>
