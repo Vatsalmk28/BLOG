@@ -9,14 +9,20 @@
        function Validateform(){
         var user=document.forms["logpage"]["usr"].value;
         var pass=document.forms["logpage"]["pas"].value;
-        if(name==""){
+        var trms=document.forms["logpage"]["terms"].value;
+        if(user==""){
             alert("User Name Must be Filled Out.");
             return false;
         }
-        if(pas==""){
+        if(pass==""){
             alert("Password Must be Filled Out.");
             return false;
         }
+        if(trms==0){
+            alert("You Must agreed to our Terms and Conditions.");
+            return false;
+        }
+        window.location.href="index.html";
         return true;
     }
     </script>
@@ -40,7 +46,7 @@
                 <div class="acpt">
                     <input type="checkbox" name="terms" required>I agreed to terms and con.
                 </div>
-                <div class="frgt"><a href="___________" target="_blank" style="text-decoration: none;">Forgot Password?</a></div>
+                <div class="frgt"><a href="../Blog/frgt_pass.html" target="_blank" style="text-decoration: none;">Forgot Password?</a></div>
                 <div>
                     <input  class="logb" type="button" value="Log In" onclick="Validateform()">
                 </div>

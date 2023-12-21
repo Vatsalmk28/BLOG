@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    /* opacity: 0.5; */
+}
+.frgt{
+    position: relative;
+    margin-top: 20%;
+    text-align: left ;
+    border-style: solid;
+    width: 25%;
+    margin-left: 35%;
+}
+.validate,.gnc{
+    position: relative;
+    text-align: right;
+}

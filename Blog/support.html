@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support / Contact Us</title>
+    <link rel="stylesheet" href="../Blog/Css/support.css">
+    <script>
+        function redirect(){
+            
+        window.location.href="index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="support">
+        <form >
+           <div class="name">
+            Name: <input type="text" id="Name" placeholder="James">
+            </div>
+            <div class="mail" >
+            Email: <input type="email" id="mail" placeholder="james.s@gmail.com">
+            </div>
+            <div class="tel" >
+            Mobile No:<input type="tel" id="tel" placeholder="1234567890">
+            </div>
+            <div class="msg" >
+          <span id="msgt">Message: </span> <textarea name="Message"placeholder="Write a Message to ...." id="msg" cols="30" rows="5"></textarea>
+            </div>
+            <div class="submit">
+                <input onclick="redirect()" type="button" value="Submit" class="sub">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
