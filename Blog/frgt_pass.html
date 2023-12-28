@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
-    <link rel="shortcut icon" href="Bolghunt_logo01.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Resources/bhlogo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../Blog/Css/frgt_pass.css">
     <script>
         let captcha = "";
@@ -24,18 +25,27 @@
     var user_captcha=document.forms["frgt"]["captcha"].value;
     if(user_captcha==captcha){
         window.alert("Right Captcha");
-        window.location.href="login.html";
+    var pass=document.forms['frgt']['newpass'].value;
+    var cpass=document.forms['frgt']['cpass'].value;
+    if(pass!=cpass){
+        window.alert("Password is not Matched.");
     }
-    else
-    
-    window.alert("Wrong Captcha");
-    generateCaptcha(5);
+    else{
+        window.alert("Password is Matched.");
+        window.alert("Now You can close this Tab.")
+    }
 
+        
     }
+    else{
+
+        window.alert("Wrong Captcha");
+        generateCaptcha(5);
+    }
+
     
-    
- 
-    
+    }
+
     </script>
 </head>
 <body>
@@ -48,10 +58,17 @@
             <input type="button" value="Generate Captcha" onclick="generateCaptcha(5)">
           </div>
            Enter Captcha: <input type="text" name="captcha" maxlength="5">
-           <div class="validate">
+         
+            <div class="newpass">
+                Password :<input type="password" placeholder="New Password" name="newpass">
+            </div>
+            <div>
+                Reenter Password :<input type="password"  placeholder="Confirm Password" name="cpass" on>
+            </div>
+            <div class="validate">
 
-             <input type="button" value="Validate" onclick="validate()">
-            </div> 
+                <input type="button" value="Submit" onclick="validate()">
+               </div> 
         </form>
     </div>
 </body>
