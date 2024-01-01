@@ -28,6 +28,12 @@ body .cat{
 .para{
     margin-left: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    
+}
+.para p{
+    font-size: large;
+    opacity: 0.8;
 }
 #header{
     text-align: right;
