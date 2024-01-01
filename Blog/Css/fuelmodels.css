@@ -1,0 +1,30 @@
+body{
+    background: #151719;
+}
+.maindiv{
+    color: white;
+    width: 50%;
+    text-align:left;
+    margin: auto;
+}
+.maindiv h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+}
+.maindiv p{
+    font-family: cursive;
+    font-size: 20px;
+    opacity: 0.8;
+    text-align: left;
+    
+}
+.maindiv h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    
+}
+body #navigation-items a{
+    text-decoration: none;
+    color: white;
+}

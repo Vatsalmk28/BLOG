@@ -4,6 +4,17 @@ body{
     background-size: cover;
     background-blend-mode: lighten;
 }
+body #home{
+    position:fixed;
+    margin-left: 2%;
+    color: black;
+    scale: 1.4;
+}
+body .cat{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-left: 43%;
+}
 .box{
     /* font-size: larger; */
     border-style: solid;
@@ -11,7 +22,12 @@ body{
     margin: auto;
     border-radius: 5px;
     margin-bottom: 2%;
+    
 
+}
+.para{
+    margin-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #header{
     text-align: right;
@@ -32,6 +48,10 @@ div img{
     border-radius: 3px;
     padding:0.5%;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(112, 196, 241);
+    color: blue;
+    border-color: black;
     
        
 }
