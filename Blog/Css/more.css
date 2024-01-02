@@ -8,12 +8,12 @@ body #home{
     position:fixed;
     margin-left: 2%;
     color: black;
-    scale: 1.4;
+    font-size: 25px;
 }
 body .cat{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
-    margin-left: 43%;
+    margin-left: 45%;
 }
 .box{
     /* font-size: larger; */
@@ -49,7 +49,7 @@ div img{
 #header span{
     position: absolute;
     margin-top:-11%;
-    margin-left: -7%;
+    margin-left: -8%;
     border-style: solid;
     border-radius: 3px;
     padding:0.5%;

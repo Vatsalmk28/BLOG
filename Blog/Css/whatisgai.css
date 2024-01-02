@@ -4,6 +4,7 @@ body{
 body #navigation-items a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 .maindiv{
     margin: auto;
@@ -31,7 +32,7 @@ header{
 footer{
   color: rgb(62, 62, 62);
   text-align: center;
-  font-size: larger;
+  font-size: 30px;
 }
 .maindiv p{
     opacity: 0.8;
