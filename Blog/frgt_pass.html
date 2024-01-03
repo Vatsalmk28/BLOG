@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
     <link rel="shortcut icon" href="./Resources/bhlogo.png" type="image/x-icon">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../Blog/Css/frgt_pass.css">
     <script>
         let captcha = "";
@@ -19,6 +19,16 @@
     captcha += chrs[(Math.floor(Math.random() * chrs.length))];
     }
     document.getElementById("captcha").innerHTML=captcha;
+    document.getElementById("captcha").style.marginLeft = "45%";
+    document.getElementById("captcha").style.textAlign = "center";
+    document.getElementById("captcha").style.fontSize = "20px";
+    document.getElementById("captcha").style.marginTop = "10%";
+    document.getElementById("captcha").style.borderStyle="solid";
+    document.getElementById("captcha").style.textDecoration="line-through"
+    document.getElementById("captcha").style.width="10%";
+    document.getElementById("captcha").style.backgroundImage = "url('./Resources/captcha.jpg')";
+    
+    
    
 }
     function validate(){
@@ -48,22 +58,25 @@
 
     </script>
 </head>
-<body>
-    <div id="captcha" ></div>
+<body onload="generateCaptcha(5)">
+    <div id="navigation-items">
+        <a href="index.html" id="home" style="margin-left:3%;scale:1.3;"><i class="fa fa-home"></i> </i></a>
+    </div>
+    <div id="captcha" on></div>
     <div class="frgt" >
-        <form name="frgt">
-        
-           Email: <input type="email" name="Email" placeholder="ABC@XYZ.COM">
+        <form name="frgt" >
+               
+           Email: <input type="email" name="Email" placeholder="ABC@XYZ.COM" id="email">
            <div class="gnc">
-            <input type="button" value="Generate Captcha" onclick="generateCaptcha(5)">
+            <input type="button" value="Re-Generate Captcha" onclick="generateCaptcha(5)" >
           </div>
-           Enter Captcha: <input type="text" name="captcha" maxlength="5">
+           Enter Captcha: <input type="text" name="captcha" maxlength="5" id="captcha">
          
             <div class="newpass">
-                Password :<input type="password" placeholder="New Password" name="newpass">
+                Password :<input type="password" placeholder="New Password" name="newpass" id="pass1">
             </div>
             <div>
-                Reenter Password :<input type="password"  placeholder="Confirm Password" name="cpass" on>
+                Reenter Password :<input type="password"  placeholder="Confirm Password" name="cpass" id="pass2">
             </div>
             <div class="validate">
 

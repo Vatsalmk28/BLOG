@@ -7,18 +7,19 @@ h1{
 } 
 .main{
     position: relative;
+    width: 30%;
+    margin: auto;
     text-align: center;
-    margin-top: 13%;
-    border-width:10px;
+    border-width:5px;
     border-color: black;
     border-style: solid;
     border-radius: 2rem;
-    width: 20rem;
-    margin-left: 40%;
-    background-color: rgb(209, 202, 6);
+    margin-top: 11%;
+    background-image: linear-gradient(60deg,rgb(173, 200, 230),blue 150%);
+    color: white;
 }
 input{
-    background-color: rgb(195, 235, 222);
+    background-color: rgb(198, 195, 235);
     border-style: solid;
     border-color: black;
     border-radius: 4px;
@@ -35,5 +36,12 @@ input{
     margin-left: 1rem;
 }
 body{
-    background-image: linear-gradient(to left, rgba(255,0,0,0) , rgb(250, 237, 47));
+    /* background-image: linear-gradient(to left, rgba(255,0,0,0) , rgb(250, 237, 47)); */
+    background-image: url('../Resources/signup.jpg');
+    background-size: 100%;
+}
+body #navigation-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
