@@ -16,7 +16,7 @@ header{
     color: white;
 }
 header{
-    color: #0077b6;
+    color: #d5bdaf;
 }
 
 img{
@@ -26,7 +26,7 @@ img{
 }
 
 p,ol{
-    color: #caf0f8;
+    color: #edede9;
     width: 50%;
     text-align: left;
     margin: auto;
@@ -34,16 +34,15 @@ p,ol{
 }
 
 #he{
-    color: #48cae4 ;
+    color: #d6ccc2 ;
     text-decoration: underline;
     font-size: 40px;
 }
 h3{
-    color: #48cae4;
+    color: #f5ebe0;
 }
 footer{
     font-size: 20px;
-    color: #0077b6;
-
+    color: #d5bdaf;
     text-align: center;
 }
