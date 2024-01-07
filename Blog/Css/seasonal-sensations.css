@@ -11,17 +11,6 @@ header {
     padding: 20px;
 }
 
-/* CSS for images */
-img {
-    height:auto;
-    width: auto;
-    position: relative;
-    margin: 4% 0 0 1%;
-    width: 45%;
-    text-align: right;
-
-}
-
 nav {
     background-color: #f2f2f2;
     padding: 10px;
@@ -46,6 +35,25 @@ a {
 
 section {
     margin: 20px;
+}
+
+.risotto-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.risotto-details img {
+    max-width: 300px;
+    border-radius: 8px;
+    line-height: 0cap;
+    text-align: justify;
+    text-decoration: solid;
+}
+
+.cooking-instructions {
+    margin-top: 20px;
 }
 
 footer {
