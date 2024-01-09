@@ -1,0 +1,69 @@
+body{
+    background-image: url('../Resources/seabg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+body #home{
+    position:fixed;
+    margin-left: 2%;
+    color: black;
+    font-size: 25px;
+}
+body .cat{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-left: 45%;
+}
+.box{
+    /* font-size: larger; */
+    border-style: solid;
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    
+
+}
+.para{
+    margin-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    
+}
+.para p{
+    font-size: large;
+    opacity: 0.8;
+}
+#header{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+div img{
+    position: relative;
+    margin: 2% 0% 0% 2%;
+    margin-bottom: -2%;
+}
+
+#header span{
+    position: absolute;
+    margin-top:-11%;
+    margin-left: -8%;
+    border-style: solid;
+    border-radius: 3px;
+    padding:0.5%;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(112, 196, 241);
+    color: blue;
+    border-color: black;
+    
+       
+}
+div h4{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    margin-bottom: -1rem;
+}
