@@ -24,6 +24,10 @@ body{
     font-size: 40px;
     
 }
+.maindiv img{
+    max-width: 300px;
+    border-radius: 8px;
+}
 body #navigation-items a{
     text-decoration: none;
     color: white;

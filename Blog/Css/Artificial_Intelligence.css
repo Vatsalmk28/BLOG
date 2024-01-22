@@ -1,6 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background:rgb(130, 184, 186);
+=======
+    background:rgb(134, 189, 192);
+>>>>>>> 12050d928811a123f067c66eab61d26939b8ef4d
 }
 header{
     text-align: center;
