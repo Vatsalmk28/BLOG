@@ -9,11 +9,19 @@ body{
     border-radius: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    background-image:url(../Resources/supprt2.jpg);
+    background-image:url(../Resources/contact.avif);
     background-size: cover;
     color: rgb(255, 255, 255);
     
     
+}
+div a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    width: 40%;
+    /* border-style: solid;  */
 }
 .support{
     /* margin-bottom: 1rem; */
@@ -55,4 +63,11 @@ body{
 .submit{
     text-align: center;
     margin-bottom: 1rem;
+}
+@media(max-width:400px){
+    body{
+        margin-top: 40%;
+        width: 90%;
+       
+    }
 }

@@ -1,6 +1,7 @@
 body{
-    background-image: radial-gradient(circle, rgb(235, 242, 236), rgb(235, 235, 167), rgb(53, 178, 241));
+    background-image: radial-gradient(circle, rgb(235, 242, 236), rgb(167, 235, 231), rgb(53, 178, 241));
     background-size: cover;
+    height: 100vh;
 }
 .frgt{
     position: relative;
@@ -11,7 +12,7 @@ body{
     text-align: left;
     border-style: solid;
     border-radius: 10px;
-    background-image: linear-gradient(45deg,lightblue,rgb(255, 255, 182));
+    background-image: linear-gradient(45deg,lightblue,rgb(182, 249, 255));
 }
 .validate,.gnc{
     position: relative;
@@ -40,3 +41,23 @@ body #navigation-items a{
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
+@media only screen and (max-width: 400px) {
+    .frgt{
+        margin-top: 25%;
+        width: 80%;
+    }
+    body{
+     height: 100vh;
+    }
+    .frgt #email{
+        /* position: relative; */
+        margin-left: 1%;
+        
+    }
+    .frgt #captcha{
+        margin-left: 18%;
+    }
+    .frgt #pass2{
+        margin-left: 18%;
+    }
+   }

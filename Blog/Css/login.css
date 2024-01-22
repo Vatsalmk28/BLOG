@@ -70,9 +70,19 @@ body{
     background-image: url('../Resources/login-transformed.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    /* scale: 1.5; */
 }
 body #navigation-items a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
+@media only screen and (max-width: 400px) {
+   .log{
+    margin-top: 45%;
+    width:80%;
+   }
+   body{
+    height: 100vh;
+   }
+  }

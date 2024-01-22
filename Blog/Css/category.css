@@ -25,6 +25,12 @@ body .cat{
     
 
 }
+.box:hover{
+    border-style: double;
+    box-shadow: 10px 10px;
+     background-color: rgb(141, 204, 200);
+    transition-duration: 1s;
+}
 .para{
     margin-left: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -66,4 +72,24 @@ div h4{
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     margin-bottom: -1rem;
+}
+@media only screen and (max-width: 400px) {
+    .box{
+        width: 80%;
+    }
+    body .cat{
+        margin-left:28%;
+    }
+    div #read{
+        /* margin-top: ; */
+       position: sticky;
+        font-size: 20px;
+    }
+    body #home{
+        position:fixed;
+        margin-left: 2%;
+        color: black;
+        font-size: 20px;
+    }
+    
 }

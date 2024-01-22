@@ -50,13 +50,13 @@ div .text{
     font-size: 25px;
     color: rgb(148, 148, 148);
 }
-.img{
+.img,.img1{
     position: relative;
     margin: 28% 0 0 1%;
     width: 45%;
     text-align: right;
 }
-.whatg{
+.img2{
     width: 45%;
     margin-left: 7%;
 }
@@ -121,3 +121,67 @@ footer{
     font-size: 30px;
     color: rgb(51, 51, 51);
 }
+@media (max-width:400px){
+    .img{
+        width: 63vb;
+        margin-left: 0%;
+    }
+    .img1{
+        margin-top: 30%;
+        width:63vb;
+        margin-left: 0%;
+    }
+    .img2{
+        margin-top: 30%;
+        width:63vb;
+        margin-left: 0%;
+    }
+    div .text{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 25%;
+        font-size: 20px;
+    }
+    .second p{
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .left a{
+        position: absolute;
+        margin-top: -10%;
+    
+    }
+    .left p{
+        position:absolute;
+        margin-top: 45%;
+    }
+    .img2{
+        position: absolute;
+        margin-top: 100%;
+    }
+    img .img2{
+        position: absolute;
+        margin-left: -4%;
+    }
+    a .img2{
+        position: absolute;
+        margin-left: -95%;
+        margin-top: 200%;
+    }
+    .right a{
+        position: absolute;
+        margin-top: 152%;
+        margin-left: -50%;
+        font-size: 20px;
+    }
+    .right p{
+        position: absolute;
+        margin-top: 208%;
+        margin-left: -50%;
+    }
+    footer{
+        margin-top: 250%;
+        margin-left: 15%;
+    }
+     
+} 

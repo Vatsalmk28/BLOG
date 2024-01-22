@@ -38,10 +38,16 @@ input{
 body{
     /* background-image: linear-gradient(to left, rgba(255,0,0,0) , rgb(250, 237, 47)); */
     background-image: url('../Resources/signup.jpg');
-    background-size: 100%;
+    background-size: cover;
+    height: 100vh;
 }
 body #navigation-items a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+@media(max-width:400px){
+    .main{
+       scale: 2;
+    }
 }
